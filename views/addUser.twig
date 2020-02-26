@@ -1,0 +1,16 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+ <h1>AddUser</h1>
+ <div class="alert alert-primary" role="alert">
+ {{ responseMessage }}
+ </div>
+
+ <form action="/Invent/users/add" method="post">
+        <label for="">Email:</label>
+        <input type ="text" name="email" ><br>
+        <label for="">Password:</label>
+        <input type ="text" name= "password"><br>
+        <button type="submit">Save</button>
+  </form>
+{% endblock %}
